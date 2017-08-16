@@ -1,0 +1,22 @@
+menu "App-Specific Configuration"
+
+config WIFI_SSID
+    string "WiFi SSID"
+        default "myssid"
+        help
+            SSID of target AP
+
+config WIFI_PASSWORD
+    string "WiFi Password"
+        default "mypassword"
+        help
+            WiFi password off target AP
+
+config TESTSERVER_ADDRESS
+    string "test_server.js host address"
+        default "192.168.1.2"
+        help
+            Address of a host which runs test_server.js"
+
+
+endmenu
