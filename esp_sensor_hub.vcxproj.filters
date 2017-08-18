@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main\http_client.cpp" />
+    <ClCompile Include="main\sensor_deepsleep.cpp" />
+    <ClCompile Include="main\tls_client.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main\freertos_future.hpp" />
+    <ClInclude Include="main\http_client.hpp" />
+    <ClInclude Include="main\tls_client.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="esp_idf.props" />
+    <None Include="main\component.mk" />
+    <None Include="main\Kconfig.projbuild" />
+    <None Include="Makefile" />
+    <None Include="sdkconfig" />
+    <None Include="main\ulp\dht11_sensor.S" />
+  </ItemGroup>
+</Project>

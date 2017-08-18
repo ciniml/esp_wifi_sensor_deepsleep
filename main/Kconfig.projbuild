@@ -12,11 +12,30 @@ config WIFI_PASSWORD
         help
             WiFi password off target AP
 
+config WIFI_CONNECTION_TIMEOUT_MS
+	int "WiFi connection timeout [ms]"
+		range 1000 20000
+		default 5000
+		help
+			WiFi connection timeout in [ms]
+
 config TESTSERVER_ADDRESS
     string "test_server.js host address"
         default "192.168.1.2"
         help
             Address of a host which runs test_server.js"
 
+config SENSOR_NAME
+	string "Sensor name"
+		default "ESP32"
+		help
+			"Name of the sensor used to send data to the server."
+
+config MEASUREMENTS_INTERVAL_S
+	int "Sensor measurement interval [s]"
+		range 1 60
+		default 10
+		help
+			Sensor measurement interval in [s]
 
 endmenu

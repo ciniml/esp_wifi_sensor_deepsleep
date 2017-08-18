@@ -1,13 +1,15 @@
+/**
+ * @file tls_client.hpp
+ * @brief TLS Client module header
+ */
+// Copyright 2017 Kenta IDA
+// Distributed under the Boost Software License, Version 1.0.
+//    (See accompanying file LICENSE_1_0.txt or copy at
+//          http://www.boost.org/LICENSE_1_0.txt)
+ 
 #ifndef TLS_CLIENT_HPP__
 #define TLS_CLIENT_HPP__
 
-
-//#include <lwip/err.h>
-//#include <lwip/sockets.h>
-//#include <lwip/sys.h>
-//#include <lwip/netdb.h>
-//#include <lwip/dns.h>
- 
 #include <mbedtls/platform.h>
 #include <mbedtls/net.h>
 #include <mbedtls/esp_debug.h>

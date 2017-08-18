@@ -1,3 +1,12 @@
+/**
+ * @file tls_client.cpp
+ * @brief HTTP Client module header
+ */
+// Copyright 2017 Kenta IDA
+// Distributed under the Boost Software License, Version 1.0.
+//    (See accompanying file LICENSE_1_0.txt or copy at
+//          http://www.boost.org/LICENSE_1_0.txt)
+
 #ifndef HTTP_CLIENT_HPP__
 #define HTTP_CLIENT_HPP__
 
@@ -36,12 +45,12 @@ public:
 	typedef TlsClient ClientType;
 private:
 	
-	static int response_parser_on_header_field(http_parser * parser, const char * at, size_t length);
-	static int response_parser_on_header_value(http_parser * parser, const char * at, size_t length);
-	static int response_parser_on_body(http_parser * parser, const char * at, size_t length);
-	static int response_parser_on_message_begin(http_parser * parser);
-	static int response_parser_on_message_complete(http_parser * parser);
-	static int response_parser_on_header_complete(http_parser * parser);
+	static int response_parser_on_header_field(http_parser* parser, const char * at, size_t length);
+	static int response_parser_on_header_value(http_parser* parser, const char * at, size_t length);
+	static int response_parser_on_body(http_parser* parser, const char * at, size_t length);
+	static int response_parser_on_message_begin(http_parser* parser);
+	static int response_parser_on_message_complete(http_parser* parser);
+	static int response_parser_on_header_complete(http_parser* parser);
 	
 
 	static const char* TAG;

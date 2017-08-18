@@ -1,3 +1,12 @@
+/**
+ * @file tls_client.cpp
+ * @brief TLS Client module source
+ */
+// Copyright 2017 Kenta IDA
+// Distributed under the Boost Software License, Version 1.0.
+//    (See accompanying file LICENSE_1_0.txt or copy at
+//          http://www.boost.org/LICENSE_1_0.txt)
+
 #include "tls_client.hpp"
 #include <esp_log.h>
 #include <functional>
